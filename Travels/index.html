@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Trending Airway</title>
+  <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <a class="navbar-brand" href="#">Trending Airway</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav ml-auto">
+        <li class="nav-item active">
+          <a class="nav-link" href="#">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Destinations</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Tours</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Contact</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+
+  <section class="hero d-flex justify-content-center align-items-center text-center" style="background-image: url('bcg.jpg'); height: 100vh; background-size: cover;">
+    <div class="text-">
+      <h1 class="text-gray-800">Explore the World</h1>
+      <p class="text-white">Your next adventure awaits</p>
+      <a href="#destinations" class="btn btn-primary btn-lg">Start Exploring</a>
+    </div>
+  </section>
+
+
+  <section id="destinations" class="container my-5">
+    <h2 class="text-center mb-4">Our Top Destinations</h2>
+    <div class="row">
+      <div class="col-md-4">
+        <div class="card tro">
+          <img src="trv.jpg" class="card-img-top" alt="Destination 1">
+          <div class="card-body">
+            <h5 class="card-title">Paris</h5>
+            <p class="card-text">A beautiful place to visit and explore.</p>
+            <a href="#" class="btn btn-primary but">Learn More</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="card tro">
+          <img src="trv1.jpg" class="card-img-top" alt="Destination 2">
+          <div class="card-body">
+            <h5 class="card-title">Qatar</h5>
+            <p class="card-text">A scenic destination with a rich culture.</p>
+            <a href="#" class="btn btn-primary but">Learn More</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="card tro">
+          <img src="trv2.jpg" class="card-img-top" alt="Destination 3">
+          <div class="card-body">
+            <h5 class="card-title">Maldives</h5>
+            <p class="card-text">A tropical paradise waiting for you.</p>
+            <a href="#" class="btn btn-primary but">Learn More</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="tours" class="container my-5">
+    <h2 class="text-center mb-4">Tour Packages</h2>
+    <div class="accordion" id="toursAccordion">
+      <div class="card">
+        <div class="card-header" id="tourOne">
+          <h5 class="mb-0">
+            <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+              First Class
+            </button>
+          </h5>
+        </div>
+        <div id="collapseOne" class="collapse show" aria-labelledby="tourOne" data-parent="#toursAccordion">
+          <div class="card-body">
+            Experience a five star treatment during your tour.
+            <a href="#" class="btn btn-primary">View Details</a>
+          </div>
+        </div>
+      </div>
+      <div class="card">
+        <div class="card-header" id="tourTwo">
+          <h5 class="mb-0">
+            <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+              Business Class
+            </button>
+          </h5>
+        </div>
+        <div id="collapseTwo" class="collapse" aria-labelledby="tourTwo" data-parent="#toursAccordion">
+          <div class="card-body">
+            Enjoy a comfort tour.
+            <a href="#" class="btn btn-primary">View Details</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact" class="container my-5">
+    <h2 class="text-center mb-4">Contact Us</h2>
+    <form>
+      <div class="form-group">
+        <label for="name">Your Name</label>
+        <input type="text" class="form-control" id="name" placeholder="Enter your name">
+      </div>
+      <div class="form-group">
+        <label for="email">Email Address</label>
+        <input type="email" class="form-control" id="email" placeholder="Enter your email">
+      </div>
+      <div class="form-group">
+        <label for="destination">Destination of Interest</label>
+        <input type="text" class="form-control" id="destination" placeholder="Enter a destination">
+      </div>
+      <div class="form-group">
+        <label for="message">Message</label>
+        <textarea class="form-control" id="message" rows="3" placeholder="Your message"></textarea>
+      </div>
+      <button type="submit" class="btn btn-primary">Submit</button>
+    </form>
+  </section>
+
+  <footer class="bg-dark text-white text-center py-3">
+    <p>&copy; 2024 Travel Agency. All Rights Reserved.</p>
+    <div>
+      <a href="#" class="text-white mx-2">Facebook</a>
+      <a href="#" class="text-white mx-2">Instagram</a>
+      <a href="#" class="text-white mx-2">Twitter</a>
+    </div>
+  </footer>
+  
+
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
